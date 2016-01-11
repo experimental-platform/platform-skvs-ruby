@@ -1,5 +1,7 @@
 # Experimental Platform SKVS - Ruby Client
 
+[![Build Status](https://travis-ci.org/experimental-platform/platform-skvs-ruby.svg)](https://travis-ci.org/experimental-platform/platform-skvs-ruby)
+
 This is a ruby client for the [Simple Key Value Service](https://github.com/experimental-platform/platform-skvs) used
 for storing and querying configuration on [Experimental Platform](https://experimental-platform.github.io/)
 
