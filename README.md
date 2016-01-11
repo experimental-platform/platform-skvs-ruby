@@ -20,7 +20,7 @@ You get a simple get/set/del interface for keys and values:
     SKVS.get 'foo' #=> nil
 
 There is also the `SKVS.try` method, which includes polling for a success/error feedback from any service dependent on the key you are setting. Imagine
-for example a system service that, when a the `hostname` key changes does some adjustments to your host machine. If you want feedback on the success of
+for example a system service that, when the `hostname` key changes, does some adjustments to your host machine. If you want feedback on the success of
 this operation, you would call `SKVS.try 'hostname', 'albatross', success: 'hostname/success', error: 'hostname/success', which will do the following:
 
 * Remove any existing error/success values under the given keys
