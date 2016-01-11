@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.license       = "MIT"
+  spec.license       = "Apache"
 
   spec.add_runtime_dependency "http", "~> 1.0"
 
