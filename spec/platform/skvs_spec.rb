@@ -30,9 +30,9 @@ describe SKVS do
       expect(SKVS.get('cleaned')).to be == 'trimmed'
     end
 
-    it "nullifies returned value if empty" do
+    it "does not nullify returned value if empty string" do
       expect(SKVS.adapter).to receive(:get).with('presence').and_return(" \n")
-      expect(SKVS.get('presence')).to be_nil
+      expect(SKVS.get('presence')).to be == ""
     end
 
     it "returns nil for missing keys" do

@@ -5,7 +5,9 @@ class SKVS
     end
 
     def get(key)
-      @storage[key]
+      if @storage.has_key? key
+        @storage[key]
+      end
     end
 
     def set(key, value)
