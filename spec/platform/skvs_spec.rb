@@ -52,6 +52,11 @@ describe SKVS do
       SKVS.set :stringified, 'key'
     end
 
+    it "stringifies given number" do
+      expect(SKVS.adapter).to receive(:set).with("stringified", "5")
+      SKVS.set :stringified, 5
+    end
+
     it "trims given value" do
       expect(SKVS.adapter).to receive(:set).with('cleaned', "trimmed")
       SKVS.set 'cleaned', " trimmed \n"

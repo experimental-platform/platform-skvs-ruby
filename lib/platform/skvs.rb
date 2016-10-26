@@ -47,6 +47,8 @@ class SKVS
       def clean(value)
         if value.kind_of? String and cleaned = value.strip
           cleaned
+        elsif value
+          clean value.to_s
         end
       end
   end
